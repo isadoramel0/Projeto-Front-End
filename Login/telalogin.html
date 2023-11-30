@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto TRAINEE</title>
+    <link rel="stylesheet" href="estiloLogin.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--favicon com logo da Comp-->
+</head>
+<body>
+    <header>
+
+    </header>
+        <section id="Intro"> <!--section usada para introdução do Projeto-->
+            <div>
+                <h1 id="titulo1">Projeto trainee</h1>  
+                <p id="p1">Caso seja sua primeira vez aqui,<br>clique <a href="">aqui</a> para fazer o seu cadastro.</p>
+            </div>
+        </section>
+        <section id="Dados">
+            <h1 id="Iniciar">Iniciar Sessão</h1>
+            <input type="text" name="email" id="email" placeholder="&#x2709  E-mail">
+            <input type="password" id="senha" placeholder=" 🔒 Senha">                   <!--inserção dados usuário-->
+            <input type="button" value="Entrar" id="entrada"onclick='verificar()'>
+            <div id="res"></div>
+        <script id="verifica">
+            function verificar() {                      //função para fazer verificação se o email é um email válido
+                let emailInput = document.getElementById('email');
+                let res = document.getElementById('res');
+                let email = emailInput.value;
+                    if(email.includes('@')) {
+                        if(email.includes('.com') ){            
+                            res.innerHTML = '';
+                        }
+                        if(email.includes('.br') ) {
+                            res.innerHTML = '';
+                        }
+                    }
+                    else {
+                        res.innerHTML='<p id ="invalido">Insira um e-mail válido.</p>'
+                    }
+                }
+        </script>
+        <p><strong><a href="" id="esqueceu">Esqueceu sua senha?</a></strong></p> <!--link "esqueceu sua senha?"-->
+        </section>
+</body>
+</html>

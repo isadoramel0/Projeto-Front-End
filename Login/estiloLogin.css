@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Lato";
+    src: url('698242188-Lato-Bla.eot');
+    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+    url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+    url('698242188-Lato-Bla.woff') format('woff'),
+    url('698242188-Lato-Bla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    padding: 40px;
+}
+#Intro {
+    background:  linear-gradient(90deg,#34457b,#a8b1e3);
+    padding: 180px;
+    height: 200px;
+    width: 240px;
+    margin-left: 220px;
+    border:2px solid #34457b;
+}
+#titulo1 {
+    margin-left: -100px;
+    margin-top: -50px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#a8b1e3;
+}
+#p1 {
+    margin-left: -100px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Dados {
+    background-color: white;
+    width: 100px;
+    height: 200px;
+    padding: 180px;
+    margin-left: 820px;
+    margin-top: -563px;
+    border: 2px solid #34457b;
+}
+#Iniciar {
+    margin-left: -89px;
+    margin-top: -50px;
+    font-size: 30px;
+    font-family:"Lato", sans-serif;
+    color:  #34457b;
+    font-weight: lighter;
+    text-align: center;
+}
+p {
+    color: rgb(211, 211, 231);
+}
+a {
+    color:#a8b1e3;
+}
+#email {
+    width: 200px;
+    padding: 7px;
+    color:#34457b;
+    text-align: justify;
+    border-radius: 10px;
+    background-color:#d3d5e6;
+    margin-left: -100px;
+    margin-top: 50px;
+}
+#senha {
+    width: 200px;
+    padding: 7px;
+    color: rgb(125, 122, 122);
+    text-align: justify;
+    border-radius: 10px;
+    background-color: #d3d5e6;
+    margin-left: -100px;
+    margin-top: 35px;
+}
+#entrada {
+    width: 180px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    background:  linear-gradient(90deg,#34457b,#a8b1e3);
+    margin-left: -80px;
+    margin-top: 80px;
+}
+#invalido{
+    margin-top: -110px;
+    margin-left: -50px;
+    font-size: 12px;
+    position: absolute;
+    color: #34457b;
+    font-family:"Lato", sans-serif;
+}
+#esqueceu {
+    font-family:"Lato", sans-serif;
+    color:  #34457b;
+    font-size: 12px;
+    margin-left: -50px;
+    position: relative;
+}

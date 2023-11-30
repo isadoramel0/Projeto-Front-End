@@ -1,0 +1,55 @@
+#container {
+    margin:50px auto;
+    background:linear-gradient(90deg,#34457b,#a8b1e3);
+    width: 1000px;
+    height: 600px;
+    border:2px solid #34457b;
+}
+#container h1 {
+    color: rgb(211, 211, 231);
+    margin-left: 20px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    font-weight: lighter; /* deixei a fonte mais fina que o padrão */
+}
+table {
+    border-collapse: collapse;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto; /* Adicione essas linhas para centralizar a tabela */
+}
+th {
+    padding: 10px; /* Adiciona algum preenchimento para melhorar a aparência */
+    text-align: center;
+    background-color:#1a2157;
+    color: rgb(236, 233, 247);
+}
+td { 
+    border: 1px solid rgb(52, 52, 67);
+    color: black;
+    padding: 10px;
+    background-color: rgb(236, 233, 247);
+    max-width: 350px; /* Defina a largura máxima da coluna */
+    white-space: nowrap; /* Evita que o texto seja quebrado em várias linhas */
+    overflow: hidden; /* Oculta o texto que ultrapassa a largura máxima */
+    text-overflow: ellipsis;
+}
+.editing td {
+    color: brown; /* Adicione um estilo para destacar as células editáveis */
+}
+.edit-btn {
+    background:  linear-gradient(90deg,#34457b,#a8b1e3);
+}
+.remove-btn {
+    background:  linear-gradient(90deg,#34457b,#a8b1e3);
+}
+#add {
+    margin-left: 77%;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    background:  linear-gradient(90deg,#34457b,#a8b1e3);
+    color: white;
+}

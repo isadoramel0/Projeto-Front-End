@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="stylesheet" href="estilofooter.css"> <!--link para o css-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--favicon com logo da Comp-->
+</head>
+<body>
+    <div id="container">
+        <h1 id="contato"><u>Contato</u></h1>
+        <div id="titulossec">
+            <h2>Telefone</h2>
+            <h2>E-mail</h2>
+        </div>
+        <div id="itens">
+            <p>(xx)0000-0000</p>
+            <p>contato@exemplo.com.br</p>
+        </div>
+        <div id="individual">
+            <h2>Localização</h2>
+        </div>
+        <div >
+            <p id="itensindi">Rua Design, 227</p>
+            <p id="itensindi">Figma, Navegador Web</p>
+            <p id="itensindi">88783-180</p>
+        </div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                let options = {
+                    zoom:16,
+                    center:{lat: -21.230937148763342, lng: -44.994779799999996} // coordenadas
+                }
+                let map = new google.maps.Map(document.getElementById('map'),options); // função para criar o mapa
+                let marker = new google.maps.Marker({
+                    position:{lat:-21.230937148763342, lng:-44.994779799999996},map:map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw8HuvdlmfnTsvmZyni99tMnrF-e5GAi4&callback=initMap"></script>  
+        <div id="dados">
+            <input type="text" placeholder="Nome" id="dadocliente">
+            <input type="text" placeholder="Telefone" id="dadocliente"> <!--inserção dados cliente-->
+            <input type="text" placeholder="E-mail" id="dadocliente">
+            <input type="text" placeholder="Mensagem" id="dadocliente">
+            <strong><input type="button" value="enviar email  →" id="botao"></strong>
+        </div>
+    </div>
+</body>
+</html>

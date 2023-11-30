@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Lato";
+    src: url('698242188-Lato-Bla.eot');
+    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+    url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+    url('698242188-Lato-Bla.woff') format('woff'),
+    url('698242188-Lato-Bla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container {
+    margin: 50px auto;
+    background: linear-gradient(90deg,#34457b,#a8b1e3);
+    width: 1000px;
+    height: 600px;
+    border:2px solid rgb(52, 52, 67);
+}
+
+#container h1 {
+    color: rgb(211, 211, 231);
+    margin-left: 20px;
+    margin-top: 0;
+    font-family:"Lato", sans-serif;
+    padding-top: 25px;
+    font-weight: lighter;
+}
+img {
+    border-radius: 10px;
+    border: 5px solid  rgb(211, 211, 231);
+}
+.imagens {
+    display: flex;
+    justify-content: center;
+}
+.img-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 200px;
+    margin-inline: 50px;
+    margin-bottom: 50px; 
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(186, 176, 176);
+    color: rgb(52, 52, 67);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border: 3px solid rgb(52, 52, 67);
+    border-radius: 5px;
+}
+.img-container:hover .overlay {
+    opacity: 1;
+}
+.overlay p {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#zoom {
+    border-radius: 10px;
+    border: 5px solid rgb(211, 211, 231);
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+

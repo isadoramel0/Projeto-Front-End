@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilocardSel.css">
+</head>
+<body>
+    <div id="container">
+        <h1>CARDS SELECIONÁVEIS</h1>
+        <div class="imagens">
+            <div class="img-container" data-zoom="fotoCompZoom.jpeg">
+                <img src="fotoCompReduz.jpeg" alt="COMP">
+                <div class="overlay">
+                    <p>Clique aqui, e selecione a imagem 1</p>
+                </div>
+            </div>
+            <div class="img-container"data-zoom="Compcatampl.jpeg">
+                <img src="Compcatred.jpeg" alt="COMP">
+                <div class="overlay">
+                    <p>Clique aqui, e selecione a imagem 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="imagens">
+            <div class="img-container"data-zoom="Compcatampl.jpeg">
+                <img src="Compcatred.jpeg" alt="COMP">
+                <div class="overlay">
+                    <p>Clique aqui, e selecione a imagem 3</p>
+                </div>
+            </div>
+            <div class="img-container"data-zoom="fotoCompZoom.jpeg">
+                <img src="fotoCompReduz.jpeg" alt="COMP">
+                <div class="overlay">
+                    <p>Clique aqui, e selecione a imagem 4</p>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" onclick="closeOverlay()">
+            <img id="zoom" src="" alt="Zoom Imagem">
+        </div>
+    </div>
+<script src="cardSel.js"></script>
+</body>
+</html>
